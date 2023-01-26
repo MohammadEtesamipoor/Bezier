@@ -1,0 +1,244 @@
+body {
+  overflow-x: hidden;
+}
+.nav-style{
+  background-color: #e5e5e5;
+  width: 100vw;
+}
+.navbar-style {
+  width: 16vw;
+  height: 100vh;
+  background-color: #e5e5e5;
+  margin: 0;
+  position: fixed;
+}
+.container-style {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  margin-top: 15px;
+}
+.log{
+  margin-top: 18px;
+}
+.btn-dashboard1 {
+  margin-top: 12px;
+  background-color: #b4cd9363;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: none;
+  font-size: 12px;
+}
+.btn-dashboard1 img{
+  width:20px;
+}
+.btn-dashboard {
+  background-color: #b4cd9363;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: none;
+  font-size: 14px;
+  width: 110%;
+}
+
+.btn-dashboard:first-child {
+  background-color: #b4cd93;
+}
+.container-navm {
+  height: 70vh;
+}
+
+.btn-bottom {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  border: none;
+}
+.nav-sec3 a {
+  text-decoration: none;
+  color: rgb(133, 124, 124);
+  font-size: 16px;
+}
+.nav-sec3 a:hover {
+  color: rgba(179, 71, 71, 0.863);
+  animation-name: nav-bottom;
+  animation-duration: 0.2s;
+  font-size: 20px;
+}
+
+@keyframes nav-bottom {
+  from {
+    font-size: 16px;
+  }
+  to {
+    font-size: 20px;
+  }
+}
+.section-main .card p {
+  font-size: 24px;
+}
+
+.card-gradient {
+  background-color: #0a302696;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.p-buy {
+  position: absolute;
+  text-align: center;
+  width: 15vw;
+  height: 100%;
+  z-index: 120;
+  opacity: 0;
+  font-weight: bold;
+  font-size: 1px;
+}
+.text-style {
+  visibility: visible;
+}
+.h1-css {
+  opacity: 1;
+}
+.p-buy:hover ~ .h1-css {
+  opacity: 0;
+  animation-name: anim-card;
+  animation-duration: 1s;
+}
+
+.p-buy:hover {
+  opacity: 1;
+  animation-name: anim-card;
+  animation-duration: 0.7s;
+  color: rgba(246, 252, 251, 0.658);
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(219, 201, 201, 0.61);
+}
+@keyframes anim-card {
+  from {
+    font-size: 10px;
+    color: rgb(247, 241, 241);
+  }
+  to {
+    color: rgba(246, 252, 251, 0.658);
+    font-size: 30px;
+    opacity: 0;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(219, 201, 201, 0.801);
+  }
+}
+.card-gradient .card {
+  z-index: -2;
+}
+.text-style {
+  z-index: 110;
+  position: absolute;
+}
+
+.btn-state {
+  background-color: #deede5;
+  color: #427a5b;
+  border: none;
+  padding: 3px 8px;
+  border-radius: 7px;
+}
+
+.tbl-artist th {
+  padding: 5px 15px;
+  background-color: #f7f7f7;
+  font-size: 9px;
+  color: rgb(58, 58, 58);
+}
+
+.tbl-artist td {
+  padding: 6px 15px;
+  background-color: #fdfcfd;
+  font-size: 9px;
+}
+.tfoott th {
+  padding: 12px 12px;
+  background-color: #f7f7f7;
+}
+.circ {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #e6e6e6;
+}
+.circles {
+  color: rgb(65, 64, 64);
+  font-size: 10px;
+}
+.circ:hover {
+  background-color: rgb(65, 64, 64);
+  color: #e6e6e6;
+}
+.circles a {
+  text-decoration: none;
+  color: rgb(65, 64, 64);
+  font-size: 10px;
+}
+
+.btn-View-all-artists {
+  background-color: #b4cd93;
+  font-size: 10px;
+}
+.best-artist {
+  font-size: 11px;
+  background-color: #fcfcfc;
+  color: rgb(107, 107, 107);
+}
+.btn-time1 {
+  font-size: 10px;
+  height: 35px;
+  width: 35px;
+  font-weight: bold;
+  border-radius: 5px;
+  color: rgb(63, 63, 63);
+}
+table {
+  background-color: #fdfcfd;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.time {
+  height: 50px;
+  color: rgb(63, 63, 63);
+  font-size: 12px;
+}
+.btn-time {
+  background-color: #b4cd93;
+  font-size: 10px;
+  height: 35px;
+  width: 35px;
+  font-weight: bold;
+  border-radius: 5px;
+  color: rgb(63, 63, 63);
+}
+.artist-img {
+  border-radius: 35px;
+  width: 30px;
+  height: 30px;
+  padding-right: 5px;
+}
+
+.progressStyle{
+  animation: anim 3s ease-in-out forwards;
+}
+@keyframes anim {
+  from{
+    width: 0;
+  }
+}
+tbody:hover tr{
+  opacity: 0.2;
+}
+tbody tr:hover{
+  opacity: 1;
+}

@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./Style.css" />
+  </head>
+  <body>
+    <header class="d-lg-none">
+      <nav class="nav-style navbar navbar-expand-md navbar-light">
+        <div class="container nav-style">
+          <div>
+            <img width="100px" src="./images/logo.png" alt="" />
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="text-light">
+              <img src="./images/menu-4-24.png" alt="" />
+            </span>
+          </button>
+
+          <div
+            class="justify-content-end collapse navbar-collapse"
+            id="navbarTogglerDemo01"
+          >
+            <div>
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link link-info text-secondary" href="#">
+                    <button class="btn btn-dashboard1 active">
+                      <div class="row gap-1">
+                        <div class="col-1">
+                          <div class="">
+                            <img src="./images/dash-icon.png" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-5">
+                          <div class="text-secondary">Dashboard</div>
+                        </div>
+                      </div>
+                    </button>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link-info text-secondary" href="#">
+                    <button class="btn btn-dashboard1">
+                      <div class="row gap-1">
+                        <div class="col-1">
+                          <div>
+                            <img src="./images/profilepeson.png" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-5">
+                          <div class="text-secondary">Artists</div>
+                        </div>
+                      </div>
+                    </button></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link-info text-secondary" href="#">
+                    <button class="btn btn-dashboard1">
+                      <div class="row gap-1">
+                        <div class="col-1">
+                          <div><img src="./images/pic.png" alt="" /></div>
+                        </div>
+                        <div class="col-5">
+                          <div class="text-secondary">Projects</div>
+                        </div>
+                      </div>
+                    </button></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link-info text-light" href="#">
+                    <button class="btn btn-dashboard1">
+                      <div class="row gap-1">
+                        <div class="col-1">
+                          <div><img src="./images/sale.png" alt="" /></div>
+                        </div>
+                        <div class="col-5">
+                          <div class="text-secondary">Sales</div>
+                        </div>
+                      </div>
+                    </button></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link-info text-light" href="#">
+                    <div>
+                      <img class="log" src="./images/setting.png" alt="" />
+                    </div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link-info text-light" href="#">
+                    <div>
+                      <img class="log" src="./images/logout.png" alt="" />
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="d-flex">
+      <div class="navbar-style d-none d-lg-block"></div>
+      <div class="container-style">
+        <div class="container-fluid pt-4">
+          <div class="row">
+            <div class="col-md-2 d-none d-lg-block section-navbar">
+              <div
+                class="container container-navm pe-4 ps-4 w-100 gap-5 d-flex flex-column justify-content-between"
+              >
+                <img width="100px" src="./images/logo.png" alt="" />
+                <div class="nav-sec2 d-flex flex-column gap-3">
+                  <button class="btn btn-dashboard active">
+                    <div class="row gap-1">
+                      <div class="col-1">
+                        <div class="">
+                          <img src="./images/dash-icon.png" alt="" />
+                        </div>
+                      </div>
+                      <div class="col-5">
+                        <div class="text-secondary">Dashboard</div>
+                      </div>
+                    </div>
+                  </button>
+                  <button class="btn btn-dashboard">
+                    <div class="row gap-1">
+                      <div class="col-1">
+                        <div>
+                          <img src="./images/profilepeson.png" alt="" />
+                        </div>
+                      </div>
+                      <div class="col-5">
+                        <div class="text-secondary">Artists</div>
+                      </div>
+                    </div>
+                  </button>
+                  <button class="btn btn-dashboard">
+                    <div class="row gap-1">
+                      <div class="col-1">
+                        <div><img src="./images/pic.png" alt="" /></div>
+                      </div>
+                      <div class="col-5">
+                        <div class="text-secondary">Projects</div>
+                      </div>
+                    </div>
+                  </button>
+                  <button class="btn btn-dashboard">
+                    <div class="row gap-1">
+                      <div class="col-1">
+                        <div><img src="./images/sale.png" alt="" /></div>
+                      </div>
+                      <div class="col-5">
+                        <div class="text-secondary">Sales</div>
+                      </div>
+                    </div>
+                  </button>
+                </div>
+                <div class="nav-sec3 d-flex flex-column gap-3">
+                  <a class="w-100 btn-bottom" href="#">
+                    <div><img src="./images/setting.png" alt="" /></div>
+                    <div class="">Settings</div>
+                  </a>
+                  <a class="w-100 btn-bottom" href="#">
+                    <div><img src="./images/logout.png" alt="" /></div>
+                    <div class="">Logout</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-7 section-main d-flex gap-5 flex-column">
+              <div class="row sec-search">
+                <div class="input-group flex-nowrap">
+                  <span class="input-group-text" id="addon-wrapping">
+                    <img width="15px" src="./images/search.png" alt="" />
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Search artists, projects"
+                    aria-label="Username"
+                    aria-describedby="addon-wrapping"
+                    style="font-size: 12px"
+                  />
+                </div>
+              </div>
+              <div class="row sec-last gap-2">
+                <h6 style="color: rgb(92, 92, 92)">In the last 30 days,</h6>
+                <div class="card-group gap-5">
+                  <div class="card" style="height: 60px; border-radius: 5px">
+                    <div class="card-gradient">
+                    </div>
+                    <img height="100%" src="./images/17-athletics.png" alt="" />
+                    <div class="position-absolute top-0 start-0 ms-2">
+                      <div class="text-style">
+                        <span role="button" class="p-buy">Art sales</span>
+                        <p
+                          class="h1-css fw-bold text-light"
+                          style="font-size: 20px"
+                        >
+                          30,000
+                        </p>
+                        <p
+                          class="h1-css text-light"
+                          style="font-size: 12px; margin-top: -15px"
+                        >
+                          Art sales
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" style="height: 60px; border-radius: 5px">
+                    <div class="card-gradient"></div>
+                    <img height="100%" src="./images/17-athletics.png" alt="" />
+                    <div class="position-absolute top-0 start-0 ms-2">
+                      <div class="text-style">
+                        <span role="button" class="p-buy">New artists</span>
+                        <p
+                          class="h1-css fw-bold text-light"
+                          style="font-size: 20px"
+                        >
+                          30,000
+                        </p>
+                        <p
+                          class="h1-css text-light"
+                          style="font-size: 12px; margin-top: -15px"
+                        >
+                          New artists
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" style="height: 60px; border-radius: 5px">
+                    <div class="card-gradient"></div>
+                    <img height="100%" src="./images/17-athletics.png" alt="" />
+                    <div class="position-absolute top-0 start-0 ms-2">
+                      <div class="text-style">
+                        <span role="button" class="p-buy"> Revenue</span>
+                        <p
+                          class="h1-css fw-bold text-light"
+                          style="font-size: 20px"
+                        >
+                          30,000
+                        </p>
+                        <p
+                          class="h1-css text-light"
+                          style="font-size: 12px; margin-top: -15px"
+                        >
+                          Revenuegenerated
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row sec-artist">
+                <div class="row d-flex align-items-center">
+                  <div class="col-md-6">
+                    <h6>All artists</h6>
+                    <p class="text-secondary">
+                      <small style="font-size: 11px"
+                        >Monitor artist sales, reviews, etc.</small
+                      >
+                    </p>
+                  </div>
+                  <div class="col d-flex gap-3">
+                    <div class="input-group flex-nowrap h-50">
+                      <span class="input-group-text" id="addon-wrapping">
+                        <img width="15px" src="./images/search.png" alt="" />
+                      </span>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Search artists"
+                        aria-label="Username"
+                        aria-describedby="addon-wrapping"
+                        style="font-size: 11px"
+                      />
+                    </div>
+                    <div>
+                      <button
+                        class="btn btn-light d-flex gap-2 border-2 border"
+                      >
+                        <img src="./images/filter-search.png" alt="" />
+
+                        <small style="font-size: 11px">Filter</small>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row tbl-artist" style="overflow-x: auto">
+                  <table>
+                    <tr>
+                      <th>Artist</th>
+                      <th>Status</th>
+                      <th>Ratings</th>
+                      <th>Projects sold</th>
+                      <th>Highest sale</th>
+                    </tr>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img
+                              class="artist-img"
+                              src="./images/artist1.png"
+                              alt=""
+                            />
+                            <span class="text-secondary">Bluenose</span>
+                          </div>
+                        </td>
+                        <td>
+                          <button class="btn-state">Verified</button>
+                        </td>
+                        <td class="d-flex gap-2 align-items-center pt-2">
+                          <div class="progress" style="height: 5px; width: 8vw">
+                            <div
+                              class="progress-bar bg-dark"
+                              role="progressbar"
+                            ></div>
+                          </div>
+                          <div
+                            class="progress position-absolute progressStyle"
+                            style="height: 5px; width: 8vw"
+                          >
+                            <div
+                              class="progress-bar bg-dark"
+                              role="progressbar"
+                              style="width: 40%"
+                              aria-valuenow="40"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                          <span> 40% </span>
+                          <button class="btn-state d-flex align-items-center">
+                            <img src="./images/arrow-up.png" alt="" />
+                            4%
+                          </button>
+                        </td>
+                        <td>
+                          <span>400</span>
+                        </td>
+                        <td>
+                          <span>$400,000</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img
+                              class="artist-img"
+                              src="./images/artist2.png"
+                              alt=""
+                            />
+                            <span class="text-secondary">Bluenose</span>
+                          </div>
+                        </td>
+                        <td>
+                          <button class="btn-state">Verified</button>
+                        </td>
+                        <td class="d-flex gap-2 align-items-center pt-2">
+                          <div class="progress" style="height: 5px; width: 8vw">
+                            <div
+                              class="progress"
+                              style="height: 5px; width: 8vw"
+                            >
+                              <div
+                                class="progress-bar bg-dark"
+                                role="progressbar"
+                              ></div>
+                            </div>
+                            <div
+                              class="progress position-absolute progressStyle"
+                              style="height: 5px; width: 8vw"
+                            >
+                              <div
+                                class="progress-bar bg-dark"
+                                role="progressbar"
+                                style="width: 70%"
+                                aria-valuenow="40"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+                          <span> 70% </span>
+                          <button class="btn-state d-flex align-items-center">
+                            <img src="./images/arrow-up.png" alt="" />
+                            7%
+                          </button>
+                        </td>
+                        <td>
+                          <span>400</span>
+                        </td>
+                        <td>
+                          <span>$400,000</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img
+                              class="artist-img"
+                              src="./images/artist3.png"
+                              alt=""
+                            />
+                            <span class="text-secondary">Bluenose</span>
+                          </div>
+                        </td>
+                        <td>
+                          <button class="btn-state">Verified</button>
+                        </td>
+                        <td class="d-flex gap-2 align-items-center pt-2">
+                          <div class="progress" style="height: 5px; width: 8vw">
+                            <div
+                            class="progress"
+                            style="height: 5px; width: 8vw"
+                          >
+                            <div
+                              class="progress-bar bg-dark"
+                              role="progressbar"
+                            ></div>
+                          </div>
+                          <div
+                            class="progress position-absolute progressStyle"
+                            style="height: 5px; width: 8vw"
+                          >
+                            <div
+                              class="progress-bar bg-dark"
+                              role="progressbar"
+                              style="width: 90%"
+                              aria-valuenow="40"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                        </div>
+                          <span> 90% </span>
+                          <button class="btn-state d-flex align-items-center">
+                            <img src="./images/arrow-up.png" alt="" />
+                            9%
+                          </button>
+                        </td>
+                        <td>
+                          <span>400</span>
+                        </td>
+                        <td>
+                          <span>$400,000</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img
+                              class="artist-img"
+                              src="./images/artist4.png"
+                              alt=""
+                            />
+                            <span class="text-secondary">Bluenose</span>
+                          </div>
+                        </td>
+                        <td>
+                          <button class="btn-state">Verified</button>
+                        </td>
+                        <td class="d-flex gap-2 align-items-center pt-2">
+                          <div class="progress" style="height: 5px; width: 8vw">
+                            <div
+                            class="progress"
+                            style="height: 5px; width: 8vw"
+                          >
+                            <div
+                              class="progress-bar bg-dark"
+                              role="progressbar"
+                            ></div>
+                          </div>
+                          <div
+                            class="progress position-absolute progressStyle"
+                            style="height: 5px; width: 8vw"
+                          >
+                            <div
+                              class="progress-bar bg-dark"
+                              role="progressbar"
+                              style="width: 75%"
+                              aria-valuenow="40"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                        </div>
+                          <span> 75% </span>
+                          <button class="btn-state d-flex align-items-center">
+                            <img src="./images/arrow-up.png" alt="" />
+                            7%
+                          </button>
+                        </td>
+                        <td>
+                          <span>400</span>
+                        </td>
+                        <td>
+                          <span>$400,000</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img
+                              class="artist-img"
+                              src="./images/artist5.png"
+                              alt=""
+                            />
+                            <span class="text-secondary">Bluenose</span>
+                          </div>
+                        </td>
+                        <td>
+                          <button class="btn-state">Verified</button>
+                        </td>
+                        <td class="d-flex gap-2 align-items-center pt-2">
+                          <div class="progress" style="height: 5px; width: 8vw">
+                            <div
+                            class="progress"
+                            style="height: 5px; width: 8vw"
+                          >
+                            <div
+                              class="progress-bar bg-dark"
+                              role="progressbar"
+                            ></div>
+                          </div>
+                          <div
+                            class="progress position-absolute progressStyle"
+                            style="height: 5px; width: 8vw"
+                          >
+                            <div
+                              class="progress-bar bg-dark"
+                              role="progressbar"
+                              style="width: 20%"
+                              aria-valuenow="40"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                        </div>
+                          <span> 20% </span>
+                          <button class="btn-state d-flex align-items-center">
+                            <img src="./images/arrow-up.png" alt="" />
+                            2%
+                          </button>
+                        </td>
+                        <td>
+                          <span>400</span>
+                        </td>
+                        <td>
+                          <span>$400,000</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img
+                              class="artist-img"
+                              src="./images/artist6.png"
+                              alt=""
+                            />
+                            <span class="text-secondary">Bluenose</span>
+                          </div>
+                        </td>
+                        <td>
+                          <button class="btn-state">Verified</button>
+                        </td>
+                        <td class="d-flex gap-2 align-items-center pt-2">
+                          <div class="progress" style="height: 5px; width: 8vw">
+                            <div
+                            class="progress"
+                            style="height: 5px; width: 8vw"
+                          >
+                            <div
+                              class="progress-bar bg-dark"
+                              role="progressbar"
+                            ></div>
+                          </div>
+                          <div
+                            class="progress position-absolute progressStyle"
+                            style="height: 5px; width: 8vw"
+                          >
+                            <div
+                              class="progress-bar bg-dark"
+                              role="progressbar"
+                              style="width: 70%"
+                              aria-valuenow="40"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                        </div>
+                          <span> 70% </span>
+                          <button class="btn-state d-flex align-items-center">
+                            <img src="./images/arrow-up.png" alt="" />
+                            7%
+                          </button>
+                        </td>
+                        <td>
+                          <span>400</span>
+                        </td>
+                        <td>
+                          <span>$400,000</span>
+                        </td>
+                        <tfoot>
+                          <tr class="tfoott">
+                            <th colspan="5" class="">
+                              <div class="d-flex gap-4">
+                                <small class="text-secondary"
+                                  >Previous page</small
+                                >
+                                <div class="circles d-flex gap-2">
+                                  <a href="#">
+                                    <div
+                                      class="circ d-flex justify-content-center align-items-center"
+                                    >
+                                      1
+                                    </div>
+                                  </a>
+                                  <a href="#">
+                                    <div
+                                      class="circ d-flex justify-content-center align-items-center"
+                                    >
+                                      2
+                                    </div>
+                                  </a>
+                                  <a href="#">
+                                    <div
+                                      class="circ d-flex justify-content-center align-items-center"
+                                    >
+                                      3
+                                    </div>
+                                  </a>
+                                  <a href="#">
+                                    <div
+                                      class="circ d-flex justify-content-center align-items-center"
+                                    >
+                                      4
+                                    </div>
+                                  </a>
+                                  <a href="#">
+                                    <div
+                                      class="circ d-flex justify-content-center align-items-center"
+                                    >
+                                      5
+                                    </div>
+                                  </a>
+                                  <a href="#">
+                                    <div
+                                      class="circ d-flex justify-content-center align-items-center"
+                                    >
+                                      6
+                                    </div>
+                                  </a>
+                                  <a href="#">
+                                    <div
+                                      class="circ d-flex justify-content-center align-items-center"
+                                    >
+                                      7
+                                    </div>
+                                  </a>
+                                </div>
+                                <small
+                                  class="pt-1"
+                                  style="color: rgb(54, 53, 53)"
+                                >
+                                  Next page
+                                </small>
+                              </div>
+                            </th>
+                          </tr>
+                        </tfoot>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-md-3 container section-right d-flex flex-column pe-5 gap-5"
+            >
+              <div
+                class="info-admin d-flex gap-4 justify-content-center pt-5 pt-md-0 justify-content-md-end"
+              >
+                <div class="d-flex gap-1">
+                  <img height="35px" src="./images/Ellipse 1.png" alt="" />
+                  <p style="font-size: 12px; color: rgb(73, 73, 73)">
+                    Karim Benzema <br />
+                    <span class="text-secondary">Admin</span>
+                  </p>
+                </div>
+                <img height="35px" src="./images/Frame 13.png" alt="" />
+              </div>
+              <div class="d-flex gap-4 flex-column">
+                <div
+                  class="best-artist d-flex flex-column gap-2 align-items-center"
+                >
+                  <h5 class="text-center fs-6">Best-selling artists</h5>
+                  <div class="d-flex gap-1">
+                    <img
+                      height="80%"
+                      src="./images/image 10.png"
+                      alt=""
+                      style="border-radius: 50%"
+                    />
+                    <div class="d-flex gap-4 pt-1">
+                      <p>Flotsam</p>
+                      <p class="text-secondary">40k+ sales</p>
+                      <p class="text-secondary">$1.4m revenue</p>
+                    </div>
+                  </div>
+                  <div class="d-flex gap-1">
+                    <img
+                      height="80%"
+                      src="./images/image 10.png"
+                      alt=""
+                      style="border-radius: 50%"
+                    />
+                    <div class="d-flex gap-4 pt-1">
+                      <p>Flotsam</p>
+                      <p class="text-secondary">40k+ sales</p>
+                      <p class="text-secondary">$1.4m revenue</p>
+                    </div>
+                  </div>
+                  <div class="d-flex gap-1">
+                    <img
+                      height="80%"
+                      src="./images/image 10.png"
+                      alt=""
+                      style="border-radius: 50%"
+                    />
+                    <div class="d-flex gap-4 pt-1">
+                      <p>Flotsam</p>
+                      <p class="text-secondary">40k+ sales</p>
+                      <p class="text-secondary">$1.4m revenue</p>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <button class="btn btn-View-all-artists">
+                      View all artists
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="best-artist d-flex flex-column gap-2 align-items-center"
+                >
+                  <h5 class="text-center fs-6">Best-selling projects</h5>
+                  <div class="d-flex gap-1">
+                    <img
+                      height="80%"
+                      src="./images/image 10.png"
+                      alt=""
+                      style="border-radius: 50%"
+                    />
+                    <div class="d-flex gap-4 pt-1">
+                      <p>Flotsam</p>
+                      <p class="text-secondary">40k+ sales</p>
+                      <p class="text-secondary">$1.4m revenue</p>
+                    </div>
+                  </div>
+                  <div class="d-flex gap-1">
+                    <img
+                      height="80%"
+                      src="./images/image 10.png"
+                      alt=""
+                      style="border-radius: 50%"
+                    />
+                    <div class="d-flex gap-4 pt-1">
+                      <p>Flotsam</p>
+                      <p class="text-secondary">40k+ sales</p>
+                      <p class="text-secondary">$1.4m revenue</p>
+                    </div>
+                  </div>
+                  <div class="d-flex gap-1">
+                    <img
+                      height="80%"
+                      src="./images/image 10.png"
+                      alt=""
+                      style="border-radius: 50%"
+                    />
+                    <div class="d-flex gap-4 pt-1">
+                      <p>Flotsam</p>
+                      <p class="text-secondary">40k+ sales</p>
+                      <p class="text-secondary">$1.4m revenue</p>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <button class="btn btn-View-all-artists">
+                      View all artists
+                    </button>
+                  </div>
+                </div>
+                <div class="d-flex p-2 gap-2 justify-content-center">
+                  <div class="row gap-lg-5">
+                    <div class="col col-lg-4">
+                      <div class="time d-flex p-2 gap-1">
+                        <div class="btn-time1 border border-1 px-2 py-2">
+                          10
+                        </div>
+                        <p style="font-weight: bold; padding-top: 5px">:</p>
+                        <div class="btn-time1 border border-1 px-2 py-2">
+                          35
+                        </div>
+                        <div class="btn-time px-2 py-2">pm</div>
+                      </div>
+                    </div>
+                    <div class="col col-lg-2">
+                      <p
+                        class="time d-flex pt-2 pe-2 gap-2"
+                        style="margin-top: 5px; color: rgb(95, 95, 95)"
+                      >
+                        11/05/2022
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <style>
+    .active,
+    .btn:hover {
+      background-color: rgb(196, 196, 196);
+      color: white;
+    }
+  </style>
+</html>
